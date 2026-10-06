@@ -17,9 +17,8 @@
                 <p class="text-white">Points: <span><b class="">@Model.Point</b></span></p>
             </div>
         </div>
-        <a class="p-2 border w-100 btn btn-warning px-3">
-            Show Detail Card
-        </a>
+        <a asp-controller="Zombie" asp-action="Edit" asp-route-id="@Model.Id" class="p-2 border w-100 btn btn-info px-3"><i class="fa-solid fa-pen"></i>&nbsp;Edit</a>
+        <a class="p-2 border w-100 btn btn-warning px-3"><i class="fa-solid fa-list-ul"></i>&nbsp;Show Detail Card</a>
         <hr />
     </div>
 </div>
